@@ -1,0 +1,53 @@
+.container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .scrolling-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem; /* Adds consistent space between cards */
+    padding-bottom: 1rem;
+    width: 100%; /* Keep this full width to ensure the scrolling wrapper spans the container */
+  }
+  
+  .scrolling-wrapper::-webkit-scrollbar {
+    height: 12px; /* Set height to ensure visibility */
+  }
+  
+  .scrolling-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Customize scrollbar color */
+    border-radius: 10px;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: calc(100% / 4 - 2rem); /* Display 4 cards, with spacing between */
+    margin-right: 0; /* Remove right margin */
+  }
+
+
+.navbar {
+    background-color: #343a40;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Star Jedi', sans-serif;
+    font-size: 24px;
+}
+
+.navbar a:hover {
+    color: #f8d7da;
+}
+
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+

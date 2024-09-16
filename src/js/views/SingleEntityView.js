@@ -33,31 +33,37 @@ export const SingleEntityView = () => {
             </div>
             <div className="row mt-4">
                 <div className="col-md-12">
-                    <div className="d-flex flex-wrap">
-                        <div className="p-2 flex-fill">
+                    <div className="features-container d-flex flex-wrap">
+                        {/* Feature Item: Appearances */}
+                        <div className="feature-item">
                             <h5>Appearances:</h5>
                             <ul>
                                 <li>Star Wars: Episode IV - A New Hope</li>
                                 <li>Star Wars: Episode V - The Empire Strikes Back</li>
                             </ul>
                         </div>
-                        <div className="p-2 flex-fill">
+                        {/* Feature Item: Affiliations */}
+                        <div className="feature-item">
                             <h5>Affiliations:</h5>
                             <p>Rebel Alliance, Jedi Order</p> 
                         </div>
-                        <div className="p-2 flex-fill">
+                        {/* Feature Item: Locations */}
+                        <div className="feature-item">
                             <h5>Locations:</h5>
                             <p>Polis Massa, Lars Moisture Farm, Tatooine</p>
                         </div>
-                        <div className="p-2 flex-fill">
+                        {/* Feature Item: Gender */}
+                        <div className="feature-item">
                             <h5>Gender:</h5>
                             <p>{details.gender}</p>
                         </div>
-                        <div className="p-2 flex-fill">
+                        {/* Feature Item: Dimensions */}
+                        <div className="feature-item">
                             <h5>Dimensions:</h5>
                             <p>Height: {details.height}</p>
                         </div>
-                        <div className="p-2 flex-fill">
+                        {/* Feature Item: Species */}
+                        <div className="feature-item">
                             <h5>Species:</h5>
                             <p>{details.species || "Human"}</p> 
                         </div>

@@ -92,7 +92,7 @@ export const Home = () => {
           <div className="card" key={index}>
             <img 
               src={`https://starwars-visualguide.com/assets/img/vehicles/${index + 1}.jpg`} 
-              className="card-img-top" 
+              className="card-img-top"
               alt={vehicle.name} 
               onError={(e) => e.target.src = "https://starwars-visualguide.com/assets/img/placeholder.jpg"} // Fallback si la imagen no existe
             />
